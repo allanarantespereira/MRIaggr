@@ -1,21 +1,3 @@
-require(data.table)
-
-path.code <- "C:/Users/hpl802/Documents/Projects/Creation_package/Package_MRIaggr/MRIaggr"
-# path.code <- "/home/brice/Bureau/Creation_package/Package_MRIaggr/MRIaggr"
-
-
-excludeRfiles <- c("Generic_Functions.R","ClassMRIaggr_A_object.R","RcppExports.R")
-source(file.path(path.code,"R","Generic_Functions.R"))
-source(file.path(path.code,"R","ClassMRIaggr_A_Object.R"))
-vecRfiles <- setdiff( list.files(file.path(path.code,"R")), excludeRfiles)
-sapply(vecRfiles, function(x){source(file.path(path.code,"R",x))})
-
-Rcpp:::sourceCpp(file.path(path.code,"src/Functions_Filtering.cpp"))
-Rcpp:::sourceCpp(file.path(path.code,"src/Functions_Hemisphere.cpp"))
-Rcpp:::sourceCpp(file.path(path.code,"src/Functions_Potential.cpp"))
-Rcpp:::sourceCpp(file.path(path.code,"src/Functions_Potts.cpp"))
-Rcpp:::sourceCpp(file.path(path.code,"src/Functions_W.cpp"))
-
 #### data ####
 
 path.Pat1 <- system.file(file.path("nifti"), package = "MRIaggr")
