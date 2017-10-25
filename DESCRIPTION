@@ -16,7 +16,7 @@ Collate: 'Generic_Functions.R' 'RcppExports.R'
          'Functions_Valid.R' 'Functions_Miscellaneous.R' 'Functions_Options.R'
 		 'Functions_GR.R'
 		 'Functions_Potts.R'
-		 'Functions_AssociatedClass.R'          
-		 'Class_MRIaggr.R' 'Class_Carto3D.R'
+		 'Functions_AssociatedClass.r'          
+		 'Class_MRIaggr.r' 'Class_Carto3D.r'
 Packaged: 2014-11-13 16:31:19 UTC; ozennebr
 
